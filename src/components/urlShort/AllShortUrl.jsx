@@ -18,7 +18,7 @@ function AllShortUrl(props) {
           
           const config = {
             method: 'post',
-            url: 'http://localhost:5000/api/GetAllShortUrl',
+            url: 'https://shorturlnodejs.herokuapp.com/api/GetAllShortUrl',
             headers: { 
               'id': '', 
               'Content-Type': 'application/json'
@@ -27,7 +27,6 @@ function AllShortUrl(props) {
           };
           
         axios(config).then((response)=>{
-        console.log(response.data)
         setGetAllUrl(response.data);
         }).catch((error)=>{
             console.error(error.message)
@@ -44,9 +43,7 @@ function AllShortUrl(props) {
 
 
 const redriectUrl = (item) =>{
-    console.log(item,`http://localhost:5000/api/${item}`)
-    axios.get(`http://localhost:5000/api/${item}`).then((response)=>{
-        console.log(response.data);
+    axios.get(`https://shorturlnodejs.herokuapp.com/api/${item}`).then((response)=>{
         getallURL();
         openNewTab(response.data);
         }).catch((error)=>{
@@ -61,7 +58,7 @@ useEffect(()=>{
   return (
     <div className='card' style={{width:"60rem",margin:"1rem 15rem",border:"none"}}>
 
-<table class="table">
+<table className="table">
   <thead className='thead-dark'>
     <tr>
       <th scope="col">#</th>
@@ -72,8 +69,8 @@ useEffect(()=>{
   </thead>
   <tbody>
 {/* 
-  <div class="spinner-border" role="status">
-  <span class="sr-only">Loading...</span>
+  <div className="spinner-border" role="status">
+  <span className="sr-only">Loading...</span>
 </div> */}
     {getAllUrl.map((item,index)=>{
         return(<>

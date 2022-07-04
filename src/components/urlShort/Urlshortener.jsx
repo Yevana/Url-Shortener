@@ -20,7 +20,7 @@ var data = {
 
 var config = {
   method: 'post',
-  url: 'http://localhost:5000/api/getUrl',
+  url: 'https://shorturlnodejs.herokuapp.com/api/getUrl',
   headers: { 
     'id': '', 
     'Content-Type': 'application/json'
@@ -30,13 +30,11 @@ var config = {
 
 axios(config)
 .then((response) => {
-  console.log(response.data);
   setUpdate(true);
   alert("URl Short is successfully Done")
 
 })
 .catch((error) => {
-  console.log(error);
 });
 
     }
