@@ -56,7 +56,7 @@ useEffect(()=>{
 
 
   return (
-    <div className='card' style={{width:"60rem",margin:"1rem 15rem",border:"none"}}>
+    <div className='card' style={{width:"60rem",margin:"1rem 18rem",border:"none"}}>
 
 <table className="table">
   <thead className='thead-dark'>

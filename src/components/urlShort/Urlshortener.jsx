@@ -40,7 +40,7 @@ axios(config)
     }
   return (
     <>
-      <div className='card container' style={{width:"30rem", margin:"2rem 30rem",
+      <div className='card container' style={{width:"30rem", margin:"2rem 33rem",
     backgroundColor: "transparent",
      backdropFilter:"saturate(180%) blur(20px)",
      boxShadow: "2px 2px 2px 2px rgb(183, 168, 168)"}}>

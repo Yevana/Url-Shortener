@@ -11,7 +11,7 @@ function Form() {
     navigate('/urlshort')
   }
   return (
-    <div className='card container' style={{width:"30rem", margin:"15rem 30rem",
+    <div className='card container' style={{width:"30rem", margin:"15rem 35rem",
     backgroundColor: "transparent",
      backdropFilter:"saturate(180%) blur(20px)",
      boxShadow: "5px 5px 5px 5px #332f2f44"}}>
